@@ -63,7 +63,7 @@ $(function() {
 $(function() {
 	$(window).on('load scroll resize', function() {
 		$('.target').anisview({
-			repeat: 'false'
+			repeat: false
 		});
 	});
 });
