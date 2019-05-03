@@ -69,6 +69,28 @@ $(function() {
 });
 ```
 
+스크롤 시 애니메이션을 지연시키고 싶을 때
+```javascript
+$(function() {
+	$(window).on('load scroll resize', function() {
+		$('.target').anisview({
+			delay: 'delay-2s'
+		});
+	});
+});
+```
+
+스크롤 시 애니메이션의 스피를 더 빠르게 하고 싶을 때
+```javascript
+$(function() {
+	$(window).on('load scroll resize', function() {
+		$('.target').anisview({
+			speed: 'faster'
+		});
+	});
+});
+```
+
 여러 개의 타겟에 애니메이션 구현하고 싶을 때
 ```javascript
 $(function() {
@@ -105,4 +127,20 @@ OPTIONS: 'down', 'up', 'both'
 ```
 DEFAULT: true
 OPTIONS: true, false
+```
+
+**delay**
+
+애니메이션 지연 시간 선택(Animate.css delay 옵션과 동일하게 사용)
+```
+DEFAULT: null
+OPTIONS: delay-2s, delay-3s, delay-4s, delay-5s
+```
+
+**speed**
+
+애니메이션 스피드 선택(Animate.css speed 옵션과 동일하게 사용)
+```
+DEFAULT: null
+OPTIONS: slow, slower, fast, faster
 ```
