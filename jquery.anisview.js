@@ -15,6 +15,8 @@ jquery.anisview
 				animation: 'fadeInLeft',
 				direction: 'down',
 				repeat: true,
+				delay: '',
+				speed: '',
 			};
 			options = $.extend(defaults, options);
 
@@ -43,42 +45,42 @@ jquery.anisview
 				if (options.repeat == true) {
 					if (options.direction == 'down') {
 						if (viewBtm > elemTop) {
-							$this.addClass(options.animation);
+							$this.addClass(options.animation).addClass(options.delay).addClass(options.speed);
 						} else {
-							$this.removeClass(options.animation);
+							$this.removeClass(options.animation).removeClass(options.delay).removeClass(options.speed);
 						}
 					} else if (options.direction == 'up') {
 						if ($body.hasClass('aniTouchBottom')) {
 							if (elemBtm > viewTop) {
-								$this.addClass(options.animation);
+								$this.addClass(options.animation).addClass(options.delay).addClass(options.speed);
 							} else {
-								$this.removeClass(options.animation);
+								$this.removeClass(options.animation).removeClass(options.delay).removeClass(options.speed);
 							}
 						}
 					} else if (options.direction == 'both') {
 						if ((viewBtm > elemTop) && (elemBtm > viewTop)) {
-							$this.addClass(options.animation);
+							$this.addClass(options.animation).addClass(options.delay).addClass(options.speed);
 						} else {
-							$this.removeClass(options.animation);
+							$this.removeClass(options.animation).removeClass(options.delay).removeClass(options.speed);
 						}
 					}
 				} else if (options.repeat == false) {
 					if (options.direction == 'down') {
 						if (viewBtm > elemTop) {
-							$this.addClass(options.animation);
+							$this.addClass(options.animation).addClass(options.delay).addClass(options.speed);
 						}
 					} else if (options.direction == 'up') {
 						if ($body.hasClass('aniTouchBottom')) {
 							if (elemBtm > viewTop) {
-								$this.addClass(options.animation);
+								$this.addClass(options.animation).addClass(options.delay).addClass(options.speed);
 							}
 						}
 					} else if (options.direction == 'both') {
 						if ((viewBtm > elemTop) && (elemBtm > viewTop)) {
-							$this.addClass(options.animation);
+							$this.addClass(options.animation).addClass(options.delay).addClass(options.speed);
 						} else {
 							if (!$body.hasClass('aniTouchBottom')) {
-								$this.removeClass(options.animation);
+								$this.removeClass(options.animation).removeClass(options.delay).removeClass(options.speed);
 							}
 						}
 					}
