@@ -26,7 +26,7 @@
 
 #### Step 3: anisview를 불러오세요.
 
-Load, Scroll, Resize 시 애니메이션 구현하고 싶을 때
+Load, Scroll, Resize 시 애니메이션을 구현하고 싶을 때
 ```javascript
 $(function() {
 	$(window).on('load scroll resize', function() {
@@ -35,7 +35,7 @@ $(function() {
 });
 ```
 
-'slideInLeft' 애니메이션 구현하고 싶을 때
+'slideInLeft' 애니메이션을 구현하고 싶을 때
 ```javascript
 $(function() {
 	$(window).on('load scroll resize', function() {
@@ -46,7 +46,7 @@ $(function() {
 });
 ```
 
-스크롤을 올리고 내릴 때마다 애니메이션 구현하고 싶을 때
+스크롤을 올리고 내릴 때마다 애니메이션을 구현하고 싶을 때
 ```javascript
 $(function() {
 	$(window).on('load scroll resize', function() {
@@ -58,7 +58,7 @@ $(function() {
 
 ```
 
-스크롤 시 한 번만 애니메이션 구현하고 싶을 때
+스크롤 시 한 번만 애니메이션을 구현하고 싶을 때
 ```javascript
 $(function() {
 	$(window).on('load scroll resize', function() {
@@ -80,7 +80,7 @@ $(function() {
 });
 ```
 
-스크롤 시 애니메이션의 스피를 더 빠르게 하고 싶을 때
+스크롤 시 애니메이션의 스피드를 더 빠르게 하고 싶을 때
 ```javascript
 $(function() {
 	$(window).on('load scroll resize', function() {
