@@ -91,7 +91,7 @@ $(function() {
 });
 ```
 
-여러 개의 타겟에 애니메이션 구현하고 싶을 때
+여러 개의 타겟에 애니메이션을 구현하고 싶을 때
 ```javascript
 $(function() {
 	$(window).on('load scroll resize', function() {
